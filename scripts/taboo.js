@@ -118,6 +118,10 @@ class TabooCard extends React.Component {
 		this.setState({card: cards[this.getRandomCardIndex()]});
 	}
 
+	handleReset(){
+		this.setState({points: 0});
+	}
+
 	render() {
 		return (
 			<div className = "card">
@@ -139,7 +143,7 @@ class TabooCard extends React.Component {
 				<div className = "tally">
 					Points: {this.state.points}
 				</div>
-				<ReportResult correctPressed = {this.handleCorrect.bind(this)} incorrectPressed = {this.handleIncorrect.bind(this)}/>
+				<ReportResult resetPressed = {this.handleReset.bind(this)} correctPressed = {this.handleCorrect.bind(this)} incorrectPressed = {this.handleIncorrect.bind(this)}/>
 			</div>
 		);
 	}
@@ -155,6 +159,7 @@ class ReportResult extends React.Component{
 	render(){
 		return (
 				<div id = "bottomButtons">
+					<button id = "resetButton" className = "btn btn-default" onClick = {this.props.resetPressed}>Reset Points</button>
 					<button id = "correctButton" className = "btn btn-default"  onClick = {this.props.correctPressed}>✓ Guessed!</button>
 					<button id = "incorrectButton" className = "btn btn-default" onClick = {this.props.incorrectPressed}>X Skipped </button>
 				</div>
