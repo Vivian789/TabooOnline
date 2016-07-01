@@ -284,9 +284,9 @@ class Timer extends React.Component{
 		}
 		return (
 			<div id = "timer">
-				<button id = "startTimer" class = "btn btn-default" onClick = {this.startTimer.bind(this)} > Start Timer</button>
-				<button id = "pauseResume" class = "btn btn-default" onClick = {timerFunction.bind(this)} > {timerAction} </button>
-				 <div>Time Left: {this.state.timeLeft}</div>
+				<button id = "startTimer" className = "btn btn-default" onClick = {this.startTimer.bind(this)} > Start Timer</button>
+				<button id = "pauseResume" className = "btn btn-default" onClick = {timerFunction.bind(this)} > {timerAction} </button>
+				 <div id = "timeLeft">Time Left: {this.state.timeLeft}</div>
 			</div>
 		)
 	}

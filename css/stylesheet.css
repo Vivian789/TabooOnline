@@ -64,9 +64,19 @@ html, body{
 	position: absolute;
 	top: 50vh;
 	right: 30px;
+	border: solid 1px grey;
+	border-radius: 5%;
 }
 
-.timer{
-	display:flex;
-	flex-direction: column;
+#pauseResume{
+	width: 100px;
+}
+
+#timeLeft{
+	margin-left: 40px;
+	margin-right: 40px;
+}
+
+#timer{
+	margin: 10px;
 }
