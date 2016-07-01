@@ -1,4 +1,18 @@
-var cards = [{word: 'Khaleesi', taboo: ['Dragons', 'Queen', 'Dothraki', 'Daenerys Targaryen', 'Badass']}];
+var cards = [{word: 'Khaleesi', taboo: ['Dragons', 'Queen', 'Dothraki', 'Daenerys Targaryen', 'Badass']}, 
+{word: 'Puppy', taboo: ['Pet', 'Dog', 'Animal', 'Canine', 'Bark']}, 
+{word: 'Cake', taboo: ['Bake', 'Dessert', 'Birthday', 'Flour', 'Sweet']}, 
+{word: 'Marshmallow', taboo: ['Smores', 'Camping', 'White', 'Rice Krispy Treats', 'Sticky']}, 
+{word: 'Rocket', taboo: ['Raccoon', 'Space Shuttle', 'Astronaut', 'Launch', 'Ship']}, 
+{word: 'Sushi', taboo: ['Japan', 'Food', 'Rice', 'Roll', 'Sashimi']}, 
+{word: 'Sunglasses', taboo: ['UV', 'Eyes', 'Shades', 'Protect', 'Wear']}, 
+{word: 'Uranus', taboo: ['Planet', 'Solar System', 'Sun', 'Neptune', 'Jupiter']}, 
+{word: 'Salt', taboo: ['Pepper', 'NaCl', 'Sodium', 'Food', 'Seasoning']}, 
+{word: 'Arcade', taboo: ['Games', 'Machine', 'Quarter', 'Tickets', 'Play']}, 
+{word: 'Gauntlet', taboo: ['Armor', 'Glove', 'Hand', 'Metal', 'Knight']}, 
+{word: 'Eiffel Tower', taboo: ['France', 'Paris', 'Landmark', 'Tall', 'Famous']}, 
+{word: 'Stegosaurus', taboo: ['Dinosaur', 'T-Rex', 'Prehistoric', 'Brontosaurus', 'Spikes']}, 
+{word: 'Octopus', taboo: ['Tentacle', 'Eight', 'Ink', 'Ocean', 'Ice Cream']}, 
+{word: 'Silver', taboo: ['Metal', 'Second', 'Gold', 'Bronze', 'Spoon']}];
 
 class TabooCard extends React.Component {
 	constructor(props){
