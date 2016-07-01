@@ -1,0 +1,72 @@
+html, body{
+	height: 100vh;
+	font-family: Arial;
+}
+
+#card-container{
+	border: solid 3px grey;
+	margin: 30px auto;
+	border-radius: 10%;
+	height: 80%;
+	width: 500px;
+}
+
+.card{
+	height: 90%;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.card-content-container{
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 30px;
+	height: 90%;
+	width: 100%;
+	flex-direction: column;
+}
+
+.word-to-guess{
+	font-size: 60px;
+	border-bottom: solid 3px blue;
+}
+
+.taboo-word{
+	font-size: 40px;
+}
+
+.tally{
+	font-size: 16px;
+
+	margin-left: 10px;
+}
+
+#bottomButtons{
+	float: right;
+}
+
+#correctButton{
+	color: green;
+}
+
+#incorrectButton{
+	color: red;
+}
+
+#create-card-container{
+	margin: 10px;
+}
+
+#timer-container{
+	font-size: 20px;
+	position: absolute;
+	top: 50vh;
+	right: 30px;
+}
+
+.timer{
+	display:flex;
+	flex-direction: column;
+}
