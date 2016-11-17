@@ -12,13 +12,23 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/remarkable/1.6.2/remarkable.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   </head>
-  <body class = "bg-info">
+  <body>
     <div id="deck-container"></div>
     <div id="card-container"></div>
     <div id="create-card-container"></div>
-    <div id="timer-container" class = "bg-warning"></div>
+    <div id="timer-container"></div>
+  </body>
+  <script src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyBoZrlp_amy5fVb2n0wlKuRvgnEED2d1MM",
+        authDomain: "taboo-90363.firebaseapp.com",
+        databaseURL: "https://taboo-90363.firebaseio.com",
+        storageBucket: "taboo-90363.appspot.com",
+      };
+      firebase.initializeApp(config);
+    </script>
     
     <script src="scripts/taboo.js" type="text/babel"></script>
-
-  </body>
 </html>
