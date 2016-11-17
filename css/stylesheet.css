@@ -1,15 +1,38 @@
 html, body{
 	height: 100vh;
 	font-family: Arial;
+	overflow: hidden;
+	color: #305;
+}
+
+::selection {
+  background: #b7ecff; 
+}
+::-moz-selection {
+  background: #b7ecff; 
+}
+
+.btn:focus, .btn:active {
+  outline: none;
+}
+
+body{
+	background: url(http://66.media.tumblr.com/f7445cdec31432df5e5ecd929292c91a/tumblr_nwcb2uyMEk1ufkj40o1_1280.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 #card-container{
-	border: solid 3px grey;
+	border: solid 1px rgba(51,0,85,0.2);
 	margin: 30px auto;
-	border-radius: 10%;
+	border-radius: 5px;
 	height: 80%;
 	width: 500px;
-	background-color: white;
+	background-color: rgba(250, 253, 255, 0.9);
+	box-shadow: 2px 0px 6px rgba(51,0,85,0.2);
+
 }
 
 .card{
@@ -19,7 +42,6 @@ html, body{
 }
 
 .card-content-container{
-
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -31,7 +53,7 @@ html, body{
 
 .word-to-guess{
 	font-size: 60px;
-	border-bottom: solid 3px blue;
+	border-bottom: solid 3px #30d;
 }
 
 .taboo-word{
@@ -65,12 +87,17 @@ html, body{
 	position: absolute;
 	top: 50vh;
 	right: 30px;
-	border: solid 1px grey;
+	border: solid 1px rgba(51,0,85,0.2);
 	border-radius: 5%;
+	box-shadow: 2px 0px 6px rgba(51,0,85,0.2);
+	background-color: rgba(255, 227, 235, 0.5);
+
 }
 
-#pauseResume{
+#pauseResume, #startTimer{
 	width: 100px;
+	box-shadow: 2px 0px 6px rgba(51,0,85,0.2);
+
 }
 
 #timeLeft{
@@ -80,4 +107,16 @@ html, body{
 
 #timer{
 	margin: 10px;
+
+}
+
+#copyright{
+	font-size: 8px;
+	color: #8ff;
+}
+
+input{
+	box-shadow: 2px 0px 6px rgba(51,0,85,0.2);
+	border: solid 1px #ccc;
+	border-radius: 2px;
 }
